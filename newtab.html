@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apprentissage</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="lib/leaflet.css">
+    <script src="lib/leaflet.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="tabs">
+            <button class="tab-button active" data-tab="math">Calcul Mental</button>
+            <button class="tab-button" data-tab="history">Dates Historiques</button>
+            <button class="tab-button" data-tab="verbs">Verbes Irréguliers</button>
+            <button class="tab-button" data-tab="geography">Géographie</button>
+        </div>
+
+        <div class="tab-content active" id="math-tab">
+            <div class="math-container">
+                <h1>Calcul Mental</h1>
+                <div class="score-container">
+                    <span>Score: </span>
+                    <span id="score">0</span>
+                </div>
+                <div class="operation-container">
+                    <span id="num1">0</span>
+                    <span id="operator">+</span>
+                    <span id="num2">0</span>
+                    <span>=</span>
+                    <input type="number" id="answer" placeholder="?">
+                </div>
+                <button id="check-answer">Vérifier</button>
+                <div id="result-message"></div>
+            </div>
+        </div>
+
+        <div class="tab-content" id="history-tab">
+            <div class="history-container">
+                <h1>Dates Historiques</h1>
+                <div class="date-container">
+                    <div class="date-display">
+                        <span id="current-date"></span>
+                    </div>
+                    <div class="event-container">
+                        <h2>Événement du jour</h2>
+                        <div id="historical-event"></div>
+                    </div>
+                    <button id="new-date">Nouvelle date</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content" id="verbs-tab">
+            <div class="verbs-container">
+                <h1>Verbes Irréguliers Anglais</h1>
+                <div class="verb-display">
+                    <div class="verb-form">
+                        <h2>Base Verbale</h2>
+                        <div id="base-verb" class="verb-text"></div>
+                    </div>
+                    <div class="verb-form">
+                        <h2>Prétérit</h2>
+                        <div id="past-verb" class="verb-text"></div>
+                    </div>
+                    <div class="verb-form">
+                        <h2>Participe Passé</h2>
+                        <div id="past-participle" class="verb-text"></div>
+                    </div>
+                    <div class="verb-form">
+                        <h2>Traduction</h2>
+                        <div id="translation" class="verb-text"></div>
+                    </div>
+                </div>
+                <div class="verb-controls">
+                    <button id="show-answer">Voir la réponse</button>
+                    <button id="new-verb">Nouveau verbe</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content" id="geography-tab">
+            <div class="geography-container">
+                <h1>Géographie de la France</h1>
+                <div class="game-info">
+                    <div class="score-container">
+                        <span>Score: </span>
+                        <span id="geo-score">0</span>
+                    </div>
+                    <div id="current-city"></div>
+                </div>
+                <div id="map"></div>
+                <div class="geo-controls">
+                    <button id="new-city">Nouvelle ville</button>
+                    <button id="check-position">Vérifier la position</button>
+                </div>
+                <div id="geo-result-message"></div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html> 
