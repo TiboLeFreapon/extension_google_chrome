@@ -11,43 +11,49 @@
 </head>
 <body>
     <div class="theme-selector">
-        <label for="theme">Thème :</label>
-        <select id="theme">
-            <option value="default">Classique</option>
-            <option value="vintage">Vintage</option>
-            <option value="dark">Sombre</option>
-            <option value="red">Rouge</option>
-        </select>
+        <div>
+            <label for="theme">Thème :</label>
+            <select id="theme">
+                <option value="default">Classique</option>
+                <option value="vintage">Vintage</option>
+                <option value="dark">Sombre</option>
+                <option value="red">Rouge</option>
+            </select>
+        </div>
+        <div>
+            <label for="tab-selector">Onglet :</label>
+            <select id="tab-selector">
+                <option value="math">Calcul Mental</option>
+                <option value="history">Dates Historiques</option>
+                <option value="verbs">Verbes Irréguliers</option>
+                <option value="geography">Géographie</option>
+            </select>
+        </div>
     </div>
     <div class="container">
-        <div class="tabs">
-            <button class="tab-button active" data-tab="math">Calcul Mental</button>
-            <button class="tab-button" data-tab="history">Dates Historiques</button>
-            <button class="tab-button" data-tab="verbs">Verbes Irréguliers</button>
-            <button class="tab-button" data-tab="geography">Géographie</button>
-        </div>
-
         <div class="tab-content active" id="math-tab">
             <div class="math-container">
                 <h1>Calcul Mental</h1>
                 <div class="score-container">
-                    <span>Score: </span>
-                    <span id="score">0</span>
-                </div>
-                <div class="difficulty-container">
-                    <label for="difficulty">Niveau :</label>
-                    <select id="difficulty">
-                        <option value="easy">Facile</option>
-                        <option value="medium">Moyen</option>
-                        <option value="hard">Difficile</option>
-                        <option value="expert">Expert</option>
-                    </select>
+                    <div class="score">
+                        <span>Score: </span>
+                        <span id="score">0</span>
+                    </div>
+                    <div class="difficulty">
+                        <label for="difficulty">Niveau :</label>
+                        <select id="difficulty">
+                            <option value="easy">Facile</option>
+                            <option value="medium">Moyen</option>
+                            <option value="hard">Difficile</option>
+                            <option value="expert">Expert</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="operation-container">
                     <span id="num1">0</span>
                     <span id="operator">+</span>
                     <span id="num2">0</span>
-                    <span>=</span>
+                    <span class="equal">=</span>
                     <input type="number" id="answer" placeholder="?">
                 </div>
                 <button id="check-answer">Vérifier</button>
