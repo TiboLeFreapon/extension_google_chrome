@@ -26,7 +26,6 @@ body {
     right: 1rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 1rem;
     z-index: 1000;
 }
@@ -145,17 +144,39 @@ h1 {
 
 /* Style pour le calcul mental */
 .score-container {
-    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 15px;
     margin-bottom: 2rem;
-    color: #2c3e50;
 }
 
-.difficulty-container {
-    margin-bottom: 2rem;
+.score {
+    font-size: 1.5rem;
+    color: #2c3e50;
     display: flex;
     align-items: center;
+    gap: 0.5rem;
+}
+
+.equal{
+    width: 75px;
+    display: flex;
     justify-content: center;
-    gap: 1rem;
+    align-items: center;
+}
+
+.difficulty {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.difficulty label {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    font-weight: bold;
 }
 
 #difficulty {
@@ -176,26 +197,34 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
     margin-bottom: 2rem;
-    font-size: 2rem;
+    font-size: 3rem;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    min-height: 150px;
 }
 
 #num1, #operator, #num2, #answer {
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: center;
+    min-width: 75px;
 }
 
 #answer {
-    width: 100px;
-    padding: 0.5rem;
-    border: 2px solid #e0e0e0;
-    border-radius: 10px;
+    width: 150px;
+    padding: 1rem;
+    border: 3px solid #e0e0e0;
+    border-radius: 15px;
     outline: none;
+    font-size: 3rem;
+    text-align: center;
 }
 
 #answer:focus {
     border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
 }
 
 /* Style pour les dates historiques */

@@ -35,23 +35,25 @@
             <div class="math-container">
                 <h1>Calcul Mental</h1>
                 <div class="score-container">
-                    <span>Score: </span>
-                    <span id="score">0</span>
-                </div>
-                <div class="difficulty-container">
-                    <label for="difficulty">Niveau :</label>
-                    <select id="difficulty">
-                        <option value="easy">Facile</option>
-                        <option value="medium">Moyen</option>
-                        <option value="hard">Difficile</option>
-                        <option value="expert">Expert</option>
-                    </select>
+                    <div class="score">
+                        <span>Score: </span>
+                        <span id="score">0</span>
+                    </div>
+                    <div class="difficulty">
+                        <label for="difficulty">Niveau :</label>
+                        <select id="difficulty">
+                            <option value="easy">Facile</option>
+                            <option value="medium">Moyen</option>
+                            <option value="hard">Difficile</option>
+                            <option value="expert">Expert</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="operation-container">
                     <span id="num1">0</span>
                     <span id="operator">+</span>
                     <span id="num2">0</span>
-                    <span>=</span>
+                    <span class="equal">=</span>
                     <input type="number" id="answer" placeholder="?">
                 </div>
                 <button id="check-answer">Vérifier</button>
