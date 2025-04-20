@@ -20,6 +20,7 @@ body.vintage .geography-container {
 body.vintage .tab-button {
     background-color: #d4b483;
     color: #4a3c2c;
+    border-radius: 10px;
 }
 
 body.vintage .tab-button.active {
