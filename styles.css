@@ -160,14 +160,6 @@ h1 {
     border-color: #3498db;
 }
 
-.date-display {
-    font-size: 2rem;
-    color: #2c3e50;
-    padding: 1rem 2rem;
-    background: #f8f9fa;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
 
 .event-container {
     background: #f8f9fa;

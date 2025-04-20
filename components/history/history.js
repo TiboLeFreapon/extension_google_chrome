@@ -1,5 +1,4 @@
 export function initHistoryGame() {
-    const currentDateElement = document.getElementById('current-date');
     const historicalEventElement = document.getElementById('historical-event');
     const newDateButton = document.getElementById('new-date');
     const historyThemeSelect = document.getElementById('history-theme');
@@ -75,7 +74,7 @@ export function initHistoryGame() {
     // Fonction pour afficher un nouvel événement
     async function displayNewEvent() {
         const event = await getHistoricalEvent();
-        currentDateElement.textContent = formatDate(new Date());
+
         historicalEventElement.innerHTML = `
             <p>${event.year ? `<strong>${event.year}</strong> - ` : ''}${event.text}</p>
             <div class="event-details">
