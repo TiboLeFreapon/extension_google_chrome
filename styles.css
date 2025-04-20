@@ -73,6 +73,28 @@ h1 {
     color: #2c3e50;
 }
 
+.difficulty-container {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#difficulty {
+    padding: 0.5rem 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+#difficulty:focus {
+    border-color: #3498db;
+}
+
 .operation-container {
     display: flex;
     justify-content: center;
