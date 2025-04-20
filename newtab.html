@@ -5,10 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apprentissage</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="themes.css">
     <link rel="stylesheet" href="lib/leaflet.css">
     <script src="lib/leaflet.js"></script>
 </head>
 <body>
+    <div class="theme-selector">
+        <label for="theme">Thème :</label>
+        <select id="theme">
+            <option value="default">Classique</option>
+            <option value="vintage">Vintage</option>
+            <option value="dark">Sombre</option>
+            <option value="red">Rouge</option>
+        </select>
+    </div>
     <div class="container">
         <div class="tabs">
             <button class="tab-button active" data-tab="math">Calcul Mental</button>
