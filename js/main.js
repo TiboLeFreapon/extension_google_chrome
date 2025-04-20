@@ -2,8 +2,12 @@ import { initMathGame } from '../components/math/math.js';
 import { initHistoryGame } from '../components/history/history.js';
 import { initVerbsGame } from '../components/verbs/verbs.js';
 import { initGeographyGame } from '../components/geography/geography.js';
+import { initThemeManager } from '../components/theme/theme.js';
 
 document.addEventListener('DOMContentLoaded', () => {
+    // Initialiser le gestionnaire de thèmes
+    initThemeManager();
+
     // Gestion des onglets
     const tabButtons = document.querySelectorAll('.tab-button');
     const tabContents = document.querySelectorAll('.tab-content');
