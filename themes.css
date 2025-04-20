@@ -3,11 +3,6 @@ body.vintage {
     background: linear-gradient(135deg, #f5e6d3 0%, #e8c4a8 100%);
 }
 
-body.vintage .container {
-    background-color: #fff5e6;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
 body.vintage .math-container,
 body.vintage .history-container,
 body.vintage .verbs-container,
@@ -66,11 +61,6 @@ body.vintage .event-details p {
 body.dark {
     background: linear-gradient(135deg, #2c3e50 0%, #1a252f 100%);
     color: #ecf0f1;
-}
-
-body.dark .container {
-    background-color: #34495e;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
 body.dark .math-container,
@@ -146,10 +136,6 @@ body.red {
     background: linear-gradient(135deg, #ffcdd2 0%, #ef9a9a 100%);
 }
 
-body.red .container {
-    background-color: #ffebee;
-    box-shadow: 0 5px 15px rgba(244,67,54,0.2);
-}
 
 body.red .math-container,
 body.red .history-container,

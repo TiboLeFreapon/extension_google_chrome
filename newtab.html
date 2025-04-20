@@ -12,7 +12,6 @@
 <body>
     <div class="theme-selector">
         <div>
-
             <label for="theme">Thème :</label>
             <select id="theme">
                 <option value="default">Classique</option>
@@ -21,16 +20,17 @@
                 <option value="red">Rouge</option>
             </select>
         </div>
-        <button id="toggle-tabs" class="toggle-button">Masquer les onglets</button>
+        <div>
+            <label for="tab-selector">Onglet :</label>
+            <select id="tab-selector">
+                <option value="math">Calcul Mental</option>
+                <option value="history">Dates Historiques</option>
+                <option value="verbs">Verbes Irréguliers</option>
+                <option value="geography">Géographie</option>
+            </select>
+        </div>
     </div>
     <div class="container">
-        <div class="tabs">
-            <button class="tab-button active" data-tab="math">Calcul Mental</button>
-            <button class="tab-button" data-tab="history">Dates Historiques</button>
-            <button class="tab-button" data-tab="verbs">Verbes Irréguliers</button>
-            <button class="tab-button" data-tab="geography">Géographie</button>
-        </div>
-
         <div class="tab-content active" id="math-tab">
             <div class="math-container">
                 <h1>Calcul Mental</h1>

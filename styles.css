@@ -17,8 +17,7 @@ body {
     width: 90%;
     max-width: 1200px;
     padding: 2rem;
-    display: flex;
-    flex-direction: row;
+    margin: 0 auto;
 }
 
 .theme-selector {
@@ -30,6 +29,12 @@ body {
     align-items: center;
     gap: 1rem;
     z-index: 1000;
+}
+
+.theme-selector > div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .theme-selector label {
@@ -117,7 +122,6 @@ body {
 }
 
 .tab-content {
-    flex: 1;
     display: none;
 }
 
