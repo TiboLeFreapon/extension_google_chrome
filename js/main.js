@@ -5,6 +5,25 @@ import { initGeographyGame } from '../components/geography/geography.js';
 import { initThemeManager } from '../components/theme/theme.js';
 
 document.addEventListener('DOMContentLoaded', () => {
+    // Gestion du menu
+    const menuToggle = document.getElementById('menu-toggle');
+    const menuContent = document.querySelector('.menu-content');
+    let menuVisible = false;
+
+    // Gestionnaire d'événements pour le bouton du menu
+    menuToggle.addEventListener('click', () => {
+        menuContent.classList.toggle('hidden');
+        menuVisible = !menuVisible;
+    });
+
+    // Fermer le menu si on clique en dehors
+    document.addEventListener('click', (e) => {
+        if (menuVisible && !menuToggle.contains(e.target) && !menuContent.contains(e.target)) {
+            menuContent.classList.add('hidden');
+            menuVisible = false;
+        }
+    });
+
     // Initialiser le gestionnaire de thèmes
     initThemeManager();
 

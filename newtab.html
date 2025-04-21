@@ -11,23 +11,26 @@
 </head>
 <body>
     <div class="theme-selector">
-        <div>
-            <label for="theme">Thème :</label>
-            <select id="theme">
-                <option value="default">Classique</option>
-                <option value="vintage">Vintage</option>
-                <option value="dark">Sombre</option>
-                <option value="red">Rouge</option>
-            </select>
-        </div>
-        <div>
-            <label for="tab-selector">Onglet :</label>
-            <select id="tab-selector">
-                <option value="math">Calcul Mental</option>
-                <option value="history">Dates Historiques</option>
-                <option value="verbs">Verbes Irréguliers</option>
-                <option value="geography">Géographie</option>
-            </select>
+        <button id="menu-toggle" class="menu-toggle">☰</button>
+        <div class="menu-content hidden">
+            <div>
+                <label for="theme">Thème :</label>
+                <select id="theme">
+                    <option value="default">Classique</option>
+                    <option value="vintage">Vintage</option>
+                    <option value="dark">Sombre</option>
+                    <option value="red">Rouge</option>
+                </select>
+            </div>
+            <div>
+                <label for="tab-selector">Onglet :</label>
+                <select id="tab-selector">
+                    <option value="math">Calcul Mental</option>
+                    <option value="history">Dates Historiques</option>
+                    <option value="verbs">Verbes Irréguliers</option>
+                    <option value="geography">Géographie</option>
+                </select>
+            </div>
         </div>
     </div>
     <div class="container">

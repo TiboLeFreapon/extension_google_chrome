@@ -24,33 +24,69 @@ body {
     position: absolute;
     top: 1rem;
     right: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
     z-index: 1000;
 }
 
-.theme-selector > div {
+.menu-toggle {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.menu-toggle:hover {
+    background-color: #2980b9;
+    transform: scale(1.1);
+}
+
+.menu-content {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 200px;
+}
+
+.menu-content.hidden {
+    display: none;
+}
+
+.menu-content > div {
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
 
-.theme-selector label {
+.menu-content label {
     color: #2c3e50;
     font-weight: bold;
+    min-width: 60px;
 }
 
-.theme-selector select {
+.menu-content select {
     padding: 0.5rem;
     border: 2px solid #e0e0e0;
     border-radius: 5px;
     background-color: white;
     cursor: pointer;
     outline: none;
+    flex: 1;
 }
 
-.theme-selector select:focus {
+.menu-content select:focus {
     border-color: #3498db;
 }
 
