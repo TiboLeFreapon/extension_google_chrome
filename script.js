@@ -149,7 +149,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Partie Dates Historiques
-    const currentDateElement = document.getElementById('current-date');
     const historicalEventElement = document.getElementById('historical-event');
     const newDateButton = document.getElementById('new-date');
 
@@ -187,7 +186,6 @@ document.addEventListener('DOMContentLoaded', () => {
     async function displayNewEvent() {
         const event = await getHistoricalEvent();
         if (event) {
-            currentDateElement.textContent = formatDate(new Date());
             historicalEventElement.innerHTML = `
                 <p><strong>${event.year}</strong> - ${event.text}</p>
             `;

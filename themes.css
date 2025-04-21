@@ -1,0 +1,287 @@
+/* Thème Vintage */
+body.vintage {
+    background: linear-gradient(135deg, #f5e6d3 0%, #e8c4a8 100%);
+}
+
+body.vintage .math-container,
+body.vintage .history-container,
+body.vintage .verbs-container,
+body.vintage .geography-container {
+    background: #fff5e6;
+    border: 1px solid #d4b483;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+body.vintage .tab-button {
+    background-color: #d4b483;
+    color: #4a3c2c;
+}
+
+body.vintage .tab-button.active {
+    background-color: #8b7355;
+    color: #fff5e6;
+}
+
+body.vintage button {
+    background-color: #8b7355;
+    color: #fff5e6;
+}
+
+body.vintage button:hover {
+    background-color: #6b5a45;
+}
+
+body.vintage h1, 
+body.vintage h2 {
+    color: #4a3c2c;
+}
+
+body.vintage .event-details {
+    margin-top: 1.5rem;
+    padding: 1.2rem;
+    background-color: #fff5e6;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+body.vintage .event-details:hover {
+    transform: translateY(-2px);
+}
+
+body.vintage .event-details p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #4a3c2c;
+    margin: 0;
+    font-style: italic;
+}
+
+/* Thème Sombre */
+body.dark {
+    background: linear-gradient(135deg, #2c3e50 0%, #1a252f 100%);
+    color: #ecf0f1;
+}
+
+body.dark .math-container,
+body.dark .history-container,
+body.dark .verbs-container,
+body.dark .geography-container {
+    background: #2c3e50;
+    border: 1px solid #34495e;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+body.dark .tab-button {
+    background-color: #34495e;
+    color: #ecf0f1;
+}
+
+body.dark .tab-button.active {
+    background-color: #3498db;
+    color: #ecf0f1;
+}
+
+body.dark button {
+    background-color: #3498db;
+    color: #ecf0f1;
+}
+
+body.dark button:hover {
+    background-color: #2980b9;
+}
+
+body.dark h1, 
+body.dark h2 {
+    color: #ecf0f1;
+}
+
+body.dark input[type="text"],
+body.dark input[type="number"],
+body.dark select {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    border-color: #34495e;
+}
+
+body.dark input[type="text"]:focus,
+body.dark input[type="number"]:focus,
+body.dark select:focus {
+    border-color: #3498db;
+}
+
+body.dark .event-details {
+    margin-top: 1.5rem;
+    padding: 1.2rem;
+    background-color: #2c3e50;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+ body.dark #difficulty{
+    color: #11323b;
+ }
+
+ 
+ body.dark .operation-container{
+    color: #11323b;
+ }
+
+
+ 
+ body.dark .score{
+    color: #a0bcc4;
+ }
+body.dark .event-details:hover {
+    transform: translateY(-2px);
+}
+
+body.dark .event-details p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ecf0f1;
+    margin: 0;
+    font-style: italic;
+}
+
+/* Thème Rouge */
+body.red {
+    background: linear-gradient(135deg, #ffcdd2 0%, #ef9a9a 100%);
+}
+
+
+body.red .math-container,
+body.red .history-container,
+body.red .verbs-container,
+body.red .geography-container {
+    background: #ffebee;
+    border: 1px solid #ef9a9a;
+    box-shadow: 0 5px 15px rgba(244,67,54,0.2);
+}
+
+body.red .tab-button {
+    background-color: #ef9a9a;
+    color: #c62828;
+}
+
+body.red .tab-button.active {
+    background-color: #e57373;
+    color: #ffebee;
+}
+
+body.red button {
+    background-color: #e57373;
+    color: #ffebee;
+}
+
+body.red button:hover {
+    background-color: #ef5350;
+}
+
+body.red h1, 
+body.red h2 {
+    color: #c62828;
+}
+
+body.red input[type="text"],
+body.red input[type="number"],
+body.red select {
+    border-color: #ef9a9a;
+}
+
+body.red input[type="text"]:focus,
+body.red input[type="number"]:focus,
+body.red select:focus {
+    border-color: #e57373;
+}
+
+body.red .event-details {
+    margin-top: 1.5rem;
+    padding: 1.2rem;
+    background-color: #ffebee;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(244, 67, 54, 0.2);
+    transition: transform 0.3s ease;
+}
+
+body.red .event-details:hover {
+    transform: translateY(-2px);
+}
+
+body.red .event-details p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #c62828;
+    margin: 0;
+    font-style: italic;
+}
+
+/* Style du sélecteur de thème */
+.theme-selector {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    padding: 10px;
+}
+
+.theme-selector label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.theme-selector select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: white;
+}
+
+/* Styles communs pour les détails d'événements */
+.event-details {
+    margin-top: 1.5rem;
+    padding: 1.2rem;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.event-details:hover {
+    transform: translateY(-2px);
+}
+
+.event-details p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 0;
+    font-style: italic;
+}
+
+/* Thème Vintage */
+body.vintage .event-details {
+    background-color: #fff5e6;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+body.vintage .event-details p {
+    color: #4a3c2c;
+}
+
+/* Thème Sombre */
+body.dark .event-details {
+    background-color: #2c3e50;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+body.dark .event-details p {
+    color: #ecf0f1;
+}
+
+/* Thème Rouge */
+body.red .event-details {
+    background-color: #ffebee;
+    box-shadow: 0 4px 6px rgba(244, 67, 54, 0.2);
+}
+
+body.red .event-details p {
+    color: #c62828;
+} 
