@@ -10,6 +10,15 @@ export function initMathGame() {
 
     let score = 0;
     let currentOperation = null;
+    
+        // Restaurer le niveau de difficulté sauvegardé ou utiliser la valeur par défaut
+        const savedDifficulty = localStorage.getItem('mathDifficulty') || 'easy';
+        difficultySelect.value = savedDifficulty;
+    
+        // Sauvegarder le niveau de difficulté lorsqu'il change
+        difficultySelect.addEventListener('change', () => {
+            localStorage.setItem('mathDifficulty', difficultySelect.value);
+        });
 
     // Opérateurs possibles (sauf pour le niveau expert)
     const operators = ['+', '-', '×', '÷'];
